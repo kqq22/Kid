@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+    <!-- LoginDo -->
+    <servlet>
+        <servlet-name>LoginDo</servlet-name>
+        <servlet-class>com.kid.servlet.LoginDo</servlet-class>
+    </servlet>
+
+    <!-- RegisterDo -->
+    <servlet>
+        <servlet-name>RegisterDo</servlet-name>
+        <servlet-class>com.kid.servlet.RegisterDo</servlet-class>
+    </servlet>
+
+    <!-- ActionListServlet -->
+    <servlet>
+        <servlet-name>ActionListServlet</servlet-name>
+        <servlet-class>com.kid.servlet.ActionListServlet</servlet-class>
+    </servlet>
+
+    <!-- Ticket1ListServlet -->
+    <servlet>
+        <servlet-name>Ticket1ListServlet</servlet-name>
+        <servlet-class>com.kid.servlet.Ticket1ListServlet</servlet-class>
+    </servlet>
+
+    <!-- Ticket2ListServlet -->
+    <servlet>
+        <servlet-name>Ticket2ListServlet</servlet-name>
+        <servlet-class>com.kid.servlet.Ticket2ListServlet</servlet-class>
+    </servlet>
+
+    <!-- Ticket3ListServlet -->
+    <servlet>
+        <servlet-name>Ticket3ListServlet</servlet-name>
+        <servlet-class>com.kid.servlet.Ticket3ListServlet</servlet-class>
+    </servlet>
+
+    <!-- TravelListServlet -->
+    <servlet>
+        <servlet-name>TravelListServlet</servlet-name>
+        <servlet-class>com.kid.servlet.TravelListServlet</servlet-class>
+    </servlet>
+
+    <!-- ShowTicketServlet -->
+    <servlet>
+        <servlet-name>ShowTicketServlet</servlet-name>
+        <servlet-class>com.kid.servlet.ShowTicketServlet</servlet-class>
+    </servlet>
+
+    <!-- ShowListServlet -->
+    <servlet>
+        <servlet-name>ShowListServlet</servlet-name>
+        <servlet-class>com.kid.servlet.ShowListServlet</servlet-class>
+    </servlet>
+
+    <!-- UpdateUserServlet -->
+    <servlet>
+        <servlet-name>UpdateUserServlet</servlet-name>
+        <servlet-class>com.kid.servlet.UpdateUserServlet</servlet-class>
+    </servlet>
+
+    <!-- BuyTicket1Servlet -->
+    <servlet>
+        <servlet-name>BuyTicket1Servlet</servlet-name>
+        <servlet-class>com.kid.servlet.BuyTicket1Servlet</servlet-class>
+    </servlet>
+
+    <!-- BuyTicket2Servlet -->
+    <servlet>
+        <servlet-name>BuyTicket2Servlet</servlet-name>
+        <servlet-class>com.kid.servlet.BuyTicket2Servlet</servlet-class>
+    </servlet>
+
+    <!-- BuyTicket3Servlet -->
+    <servlet>
+        <servlet-name>BuyTicket3Servlet</servlet-name>
+        <servlet-class>com.kid.servlet.BuyTicket3Servlet</servlet-class>
+    </servlet>
+
+    <!-- <servlet-mapping>
+     <servlet-name>JAX-RS Servlet</servlet-name>
+        <url-pattern>/jaxrs/*</url-pattern>
+    </servlet-mapping>-->
+
+    <!-- LoginDo -->
+    <servlet-mapping>
+        <servlet-name>LoginDo</servlet-name>
+        <url-pattern>/loginDo</url-pattern>
+    </servlet-mapping>
+
+    <!-- RegisterDo -->
+    <servlet-mapping>
+        <servlet-name>RegisterDo</servlet-name>
+        <url-pattern>/registerDo</url-pattern>
+    </servlet-mapping>
+
+    <!-- ActionListServlet -->
+    <servlet-mapping>
+        <servlet-name>ActionListServlet</servlet-name>
+        <url-pattern>/action</url-pattern>
+    </servlet-mapping>
+
+    <!-- Ticket1ListServlet -->
+    <servlet-mapping>
+        <servlet-name>Ticket1ListServlet</servlet-name>
+        <url-pattern>/ticket1</url-pattern>
+    </servlet-mapping>
+
+    <!-- Ticket2ListServlet -->
+    <servlet-mapping>
+        <servlet-name>Ticket2ListServlet</servlet-name>
+        <url-pattern>/ticket2</url-pattern>
+    </servlet-mapping>
+
+    <!-- Ticket3ListServlet -->
+    <servlet-mapping>
+        <servlet-name>Ticket3ListServlet</servlet-name>
+        <url-pattern>/ticket3</url-pattern>
+    </servlet-mapping>
+
+    <!-- TravelListServlet -->
+    <servlet-mapping>
+        <servlet-name>TravelListServlet</servlet-name>
+        <url-pattern>/travel</url-pattern>
+    </servlet-mapping>
+
+    <!-- ShowTicketServlet -->
+    <servlet-mapping>
+        <servlet-name>ShowTicketServlet</servlet-name>
+        <url-pattern>/showticket</url-pattern>
+    </servlet-mapping>
+
+    <!-- ShowListServlet -->
+    <servlet-mapping>
+        <servlet-name>ShowListServlet</servlet-name>
+        <url-pattern>/show</url-pattern>
+    </servlet-mapping>
+
+    <!-- UpdateUserServlet -->
+    <servlet-mapping>
+        <servlet-name>UpdateUserServlet</servlet-name>
+        <url-pattern>/updateuser</url-pattern>
+    </servlet-mapping>
+
+    <!-- BuyTicket1Servlet -->
+    <servlet-mapping>
+        <servlet-name>BuyTicket1Servlet</servlet-name>
+        <url-pattern>/buytickethd</url-pattern>
+    </servlet-mapping>
+
+    <!-- BuyTicket2Servlet -->
+    <servlet-mapping>
+        <servlet-name>BuyTicket2Servlet</servlet-name>
+        <url-pattern>/buyticketly</url-pattern>
+    </servlet-mapping>
+
+    <!-- BuyTicket3Servlet -->
+    <servlet-mapping>
+        <servlet-name>BuyTicket3Servlet</servlet-name>
+        <url-pattern>/buyticketpw</url-pattern>
+    </servlet-mapping>
+
+</web-app>
