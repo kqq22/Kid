@@ -40,6 +40,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="true" />
@@ -294,7 +297,7 @@
       <workItem from="1586572872926" duration="21464000" />
       <workItem from="1586594877941" duration="13215000" />
       <workItem from="1586663009697" duration="27760000" />
-      <workItem from="1586762360824" duration="1943000" />
+      <workItem from="1586762360824" duration="2543000" />
     </task>
     <servers />
   </component>
