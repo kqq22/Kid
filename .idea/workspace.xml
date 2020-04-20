@@ -7,40 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9420358a-92a6-42de-b1ad-546966d576d2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/kid/servlet/OrderDetailsListServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/kid/servlet/OrderListServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Kid_war_exploded2/WEB-INF/classes/com/kid/dao/OrderDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Kid_war_exploded2/WEB-INF/classes/com/kid/dao/OrderDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Kid_war_exploded2/WEB-INF/classes/com/kid/dao/OrderDetailsDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Kid_war_exploded2/WEB-INF/classes/com/kid/dao/OrderDetailsDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Kid_war_exploded2/WEB-INF/classes/com/kid/dao/impl/ActionDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Kid_war_exploded2/WEB-INF/classes/com/kid/dao/impl/ActionDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Kid_war_exploded2/WEB-INF/classes/com/kid/dao/impl/OrderDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Kid_war_exploded2/WEB-INF/classes/com/kid/dao/impl/OrderDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Kid_war_exploded2/WEB-INF/classes/com/kid/dao/impl/OrderDetailsDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Kid_war_exploded2/WEB-INF/classes/com/kid/dao/impl/OrderDetailsDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Kid_war_exploded2/WEB-INF/classes/com/kid/entity/OrderEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Kid_war_exploded2/WEB-INF/classes/com/kid/entity/OrderEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Kid_war_exploded2/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Kid_war_exploded2/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Kid_war_exploded2/ddxq.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Kid_war_exploded2/ddxq.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Kid_war_exploded2/grzl.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Kid_war_exploded2/grzl.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Kid_war_exploded2/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Kid_war_exploded2/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Kid_war_exploded2/qzhd-1.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Kid_war_exploded2/qzhd-1.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Kid_war_exploded2/wddd.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Kid_war_exploded2/wddd.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Kid/com/kid/dao/OrderDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Kid/com/kid/dao/OrderDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Kid/com/kid/dao/OrderDetailsDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Kid/com/kid/dao/OrderDetailsDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Kid/com/kid/dao/impl/ActionDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Kid/com/kid/dao/impl/ActionDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Kid/com/kid/dao/impl/OrderDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Kid/com/kid/dao/impl/OrderDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Kid/com/kid/dao/impl/OrderDetailsDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Kid/com/kid/dao/impl/OrderDetailsDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Kid/com/kid/entity/OrderEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Kid/com/kid/entity/OrderEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/kid/dao/OrderDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kid/dao/OrderDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/kid/dao/OrderDetailsDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kid/dao/OrderDetailsDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/kid/dao/impl/ActionDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kid/dao/impl/ActionDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/kid/dao/impl/OrderDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kid/dao/impl/OrderDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/kid/dao/impl/OrderDetailsDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kid/dao/impl/OrderDetailsDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/kid/entity/OrderEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kid/entity/OrderEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/ddxq.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/ddxq.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/grzl.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/grzl.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/qzhd-1.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/qzhd-1.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/wddd.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/wddd.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -346,12 +313,24 @@
       <workItem from="1586831945490" duration="6698000" />
       <workItem from="1587024922775" duration="11025000" />
       <workItem from="1587306578046" duration="929000" />
-      <workItem from="1587366820748" duration="1865000" />
+      <workItem from="1587366820748" duration="2655000" />
     </task>
+    <task id="LOCAL-00001" summary="更新">
+      <created>1587368859202</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1587368859203</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="更新" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新" />
   </component>
   <component name="WindowStateProjectService">
     <state x="815" y="219" key="#Inspections" timestamp="1586526501960">
@@ -402,10 +381,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="216" y="563" width="497" height="477" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1040@0.0.1920.1040" timestamp="1586442637687" />
-    <state x="470" y="155" key="CommitChangelistDialog2" timestamp="1587368835317">
+    <state x="470" y="155" key="CommitChangelistDialog2" timestamp="1587368855842">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="470" y="155" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1587368835317" />
+    <state x="470" y="155" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1587368855842" />
     <state x="912" y="363" key="FileChooserDialogImpl" timestamp="1586765787377">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -426,54 +405,54 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1275" height="268" key="GridCell.Tab.-1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1586497348143" />
-    <state width="636" height="2" key="GridCell.Tab.0.bottom" timestamp="1587368806894">
+    <state width="1275" height="272" key="GridCell.Tab.0.bottom" timestamp="1587369734474">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="636" height="2" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587368806894" />
-    <state width="636" height="2" key="GridCell.Tab.0.center" timestamp="1587368806894">
+    <state width="1275" height="272" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587369734474" />
+    <state width="1275" height="272" key="GridCell.Tab.0.center" timestamp="1587369734474">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="636" height="2" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587368806894" />
-    <state width="636" height="2" key="GridCell.Tab.0.left" timestamp="1587368806894">
+    <state width="1275" height="272" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587369734474" />
+    <state width="1275" height="272" key="GridCell.Tab.0.left" timestamp="1587369734474">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="636" height="2" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587368806894" />
-    <state width="636" height="2" key="GridCell.Tab.0.right" timestamp="1587368806894">
+    <state width="1275" height="272" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587369734474" />
+    <state width="1275" height="272" key="GridCell.Tab.0.right" timestamp="1587369734474">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="636" height="2" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587368806894" />
-    <state width="636" height="2" key="GridCell.Tab.1.bottom" timestamp="1587368806895">
+    <state width="1275" height="272" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587369734474" />
+    <state width="1275" height="272" key="GridCell.Tab.1.bottom" timestamp="1587369734474">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="636" height="2" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587368806895" />
-    <state width="636" height="2" key="GridCell.Tab.1.center" timestamp="1587368806895">
+    <state width="1275" height="272" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587369734474" />
+    <state width="1275" height="272" key="GridCell.Tab.1.center" timestamp="1587369734474">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="636" height="2" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587368806895" />
-    <state width="636" height="2" key="GridCell.Tab.1.left" timestamp="1587368806894">
+    <state width="1275" height="272" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587369734474" />
+    <state width="1275" height="272" key="GridCell.Tab.1.left" timestamp="1587369734474">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="636" height="2" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587368806894" />
-    <state width="636" height="2" key="GridCell.Tab.1.right" timestamp="1587368806895">
+    <state width="1275" height="272" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587369734474" />
+    <state width="1275" height="272" key="GridCell.Tab.1.right" timestamp="1587369734474">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="636" height="2" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587368806895" />
-    <state width="636" height="2" key="GridCell.Tab.2.bottom" timestamp="1587368806895">
+    <state width="1275" height="272" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587369734474" />
+    <state width="1275" height="272" key="GridCell.Tab.2.bottom" timestamp="1587369734475">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="636" height="2" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587368806895" />
-    <state width="636" height="2" key="GridCell.Tab.2.center" timestamp="1587368806895">
+    <state width="1275" height="272" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587369734475" />
+    <state width="1275" height="272" key="GridCell.Tab.2.center" timestamp="1587369734475">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="636" height="2" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587368806895" />
-    <state width="636" height="2" key="GridCell.Tab.2.left" timestamp="1587368806895">
+    <state width="1275" height="272" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587369734475" />
+    <state width="1275" height="272" key="GridCell.Tab.2.left" timestamp="1587369734475">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="636" height="2" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587368806895" />
-    <state width="636" height="2" key="GridCell.Tab.2.right" timestamp="1587368806895">
+    <state width="1275" height="272" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587369734475" />
+    <state width="1275" height="272" key="GridCell.Tab.2.right" timestamp="1587369734475">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="636" height="2" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587368806895" />
+    <state width="1275" height="272" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587369734475" />
     <state x="495" y="613" width="938" height="227" key="GridCell.Tab.3.bottom" timestamp="1586771598853">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -530,6 +509,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1060" y="112" width="759" height="822" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1586675074908" />
+    <state x="1297" y="418" key="git4idea.merge.GitPullDialog" timestamp="1587369675654">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1297" y="418" key="git4idea.merge.GitPullDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587369675654" />
     <state x="1063" y="241" key="refactoring.ChangeSignatureDialog" timestamp="1586683673437">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
