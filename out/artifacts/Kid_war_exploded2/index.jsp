@@ -85,43 +85,42 @@
 									<li><a href=""><img src="Picture/qzhd-1.jpg" width="305"  height="242"/></a>					                                    <div class="qzhd-li-t">
                                     <p>新梦想少儿足球免费试踢啦！</p>
                                     <span><i><img src="Picture/time_19.jpg" /></i>2015年07月01日-2015年09月01日</span>
-                                    <a><b>￥</b>70</a>
-                                    </div>
-                                    <div class="guanbi">已关闭</div>
-                                    <div class="black"></div>
-                                    </li>
-									<li style="margin:0px 36px;"><a href=""><img src="Picture/qzhd-2.png" width="305"  height="242"/></a>					                                    <div class="qzhd-li-t">
-                                    <p>新梦想少儿足球免费试踢啦！</p>
-                                    <span><i><img src="Picture/time_19.jpg" /></i>2015年07月01日-2015年09月01日</span>
-                                    <a><b>￥</b>70</a>
-                                    </div>
-                                     <div class="jinxin">进行中</div>
-                                    </li>
-                                    <li><a href=""><img src="Picture/qzhd-3.png" width="305"  height="242"/></a>					                                    <div class="qzhd-li-t">
-                                    <p>新梦想少儿足球免费试踢啦！</p>
-                                    <span><i><img src="Picture/time_19.jpg" /></i>2015年07月01日-2015年09月01日</span>
-                                    <a><b>￥</b>70</a>
-                                    </div>
-                                     <div class="jinxin">进行中</div>
-                                    </li>
-                                    <li><a href=""><img src="Picture/qzhd-1.jpg" width="305"  height="242"/></a>					                                    <div class="qzhd-li-t">
-                                    <p>新梦想少儿足球免费试踢啦！</p>
-                                    <span><i><img src="Picture/time_19.jpg" /></i>2015年07月01日-2015年09月01日</span>
-                                    <a><b>￥</b>70</a>
+                                    <a><b>￥</b>90</a>
                                     </div>
                                     <div class="jinxin">进行中</div>
                                     </li>
-                                    <li style="margin:0px 36px;"><a href=""><img src="Picture/qzhd-2.png" width="305"  height="242"/></a>					                                    <div class="qzhd-li-t">
-                                    <p>新梦想少儿足球免费试踢啦！</p>
-                                    <span><i><img src="Picture/time_19.jpg" /></i>2015年07月01日-2015年09月01日</span>
-                                    <a><b>￥</b>70</a>
+									<li style="margin:0px 36px;"><a href=""><img src="Picture/qzhd-4.png" width="305"  height="242"/></a>					                                    <div class="qzhd-li-t">
+                                    <p>小牛奶大秘密免费试做啦</p>
+                                    <span><i><img src="Picture/time_19.jpg" /></i>2019年04月14日-2019年06月14日</span>
+                                    <a><b>￥</b>80</a>
+                                    </div>
+                                     <div class="jinxin">进行中</div>
+                                    </li>
+                                    <li><a href=""><img src="Picture/qzhd-5.png" width="305"  height="242"/></a>					                                    <div class="qzhd-li-t">
+                                    <p>北海公园游湖体验开始啦</p>
+                                    <span><i><img src="Picture/time_19.jpg" /></i>2019年06月12日-2019年07月12日</span>
+                                    <a><b>￥</b>100</a>
+                                    </div>
+                                     <div class="jinxin">进行中</div>
+                                    </li>
+                                    <li><a href=""><img src="Picture/qzhd-6.jpg" width="305"  height="242"/></a>					                                    <div class="qzhd-li-t">
+                                    <p>北京故宫逛最“萌”皇城</p>
+                                    <span><i><img src="Picture/time_19.jpg" /></i>2019年04月20日-2019年05月20日</span>
+                                    <a><b>￥</b>90</a>
                                     </div>
                                     <div class="jinxin">进行中</div>
                                     </li>
-                                    <li><a href=""><img src="Picture/index_15.jpg" width="305"  height="242"/></a>					                                    <div class="qzhd-li-t">
-                                    <p>新梦想少儿足球免费试踢啦！</p>
-                                    <span><i><img src="Picture/time_19.jpg" /></i>2015年07月01日-2015年09月01日</span>
-                                    <a><b>￥</b>70</a>
+                                    <li style="margin:0px 36px;"><a href=""><img src="Picture/qzhd-7.jpg" width="305"  height="242"/></a>					                                    <div class="qzhd-li-t">
+                                    <p>天坛之神奇声学建筑不为人知的秘密</p>
+                                    <span><i><img src="Picture/time_19.jpg" /></i>2019年09月28日-2019年10月28日</span>
+                                    <a><b>￥</b>60</a>
+                                    </div>
+                                    <div class="jinxin">进行中</div>
+                                    </li>
+                                    <li><a href=""><img src="Picture/qzhd-8.png" width="305"  height="242"/></a>					                                    <div class="qzhd-li-t">
+                                    <p>探秘警察博物馆防拐课堂开放啦</p>
+                                    <span><i><img src="Picture/time_19.jpg" /></i>2019年05月17日-2019年06月17日</span>
+                                    <a><b>￥</b>50</a>
                                     </div>
                                     <div class="jinxin">进行中</div>
                                     </li>
@@ -149,15 +148,13 @@
 			<div class="bd">
 				<ul>
 					<li><img src="Picture/qzly-1.png" width="205"  height="138"/></li>
-                    <li><img src="Picture/qzly-2.png" width="205"  height="138"/></li>
-					<li><img src="Picture/qzly-3.png" width="205"  height="138"/></li>
-                    <li><img src="Picture/qzly-2.png" width="205"  height="138"/></li>
-                    <li><img src="Picture/qzly-3.png" width="205"  height="138"/></li>
-					<li><img src="Picture/qzly-1.png" width="205"  height="138"/></li>
+                    <li><img src="Picture/qzly-4.png" width="205"  height="138"/></li>
+					<li><img src="Picture/qzly-5.png" width="205"  height="138"/></li>
+                    <li><img src="Picture/qzly-6.png" width="205"  height="138"/></li>
+                    <li><img src="Picture/qzly-7.png" width="205"  height="138"/></li>
+					<li><img src="Picture/qzly-8.png" width="205"  height="138"/></li>
 				</ul>
-				
-               
-               
+
 			</div>
 		</div>
         
@@ -230,46 +227,46 @@
                                     </div>
                                     </div>
                                     </li>
-                                    <li style="margin:0px 10px"><a href=""><img src="Picture/pw-2.jpg"  width="326" height="247"/></a>					                                    <div class="pw-li-t">
-                                    <p>北仑凤凰山海港乐园门票</p>
-                                    <a><b>￥</b>145</a>
-                                    <span>门店价<b>￥160</b></span>
+                                    <li style="margin:0px 10px"><a href=""><img src="Picture/qzhd-1.jpg"  width="326" height="247"/></a>					                                    <div class="pw-li-t">
+                                    <p>新梦想少儿足球门票</p>
+                                    <a><b>￥</b>90</a>
+                                    <span>门店价<b>￥110</b></span>
                                     <div class="pw-li-t-d">
                                     立即购买&gt;&gt;
                                     </div>
                                     </div>
                                     </li>
-                                    <li><a href=""><img src="Picture/pw-3.jpg"  width="326" height="247"/></a>					                                    <div class="pw-li-t">
-                                    <p>北仑凤凰山海港乐园门票</p>
-                                    <a><b>￥</b>145</a>
-                                    <span>门店价<b>￥160</b></span>
+                                    <li><a href=""><img src="Picture/qzly-1.png"  width="326" height="247"/></a>					                                    <div class="pw-li-t">
+                                    <p>南京海底世界门票</p>
+                                    <a><b>￥</b>210</a>
+                                    <span>门店价<b>￥235</b></span>
                                     <div class="pw-li-t-d">
                                     立即购买&gt;&gt;
                                     </div>
                                     </div>
                                     </li>
-									<li><a href=""><img src="Picture/pw-4.jpg"  width="326" height="247"/></a>					                                    <div class="pw-li-t">
-                                    <p>北仑凤凰山海港乐园门票</p>
-                                    <a><b>￥</b>145</a>
-                                    <span>门店价<b>￥160</b></span>
+									<li><a href=""><img src="Picture/qzhd-4.png"  width="326" height="247"/></a>					                                    <div class="pw-li-t">
+                                    <p>小牛奶大秘密门票</p>
+                                    <a><b>￥</b>80</a>
+                                    <span>门店价<b>￥100</b></span>
                                     <div class="pw-li-t-d">
                                     立即购买&gt;&gt;
                                     </div>
                                     </div>
                                     </li>
-                                    <li style="margin:0px 10px"><a href=""><img src="Picture/pw-2.jpg"  width="326" height="247"/></a>					                                    <div class="pw-li-t">
-                                    <p>北仑凤凰山海港乐园门票</p>
-                                    <a><b>￥</b>145</a>
-                                    <span>门店价<b>￥160</b></span>
+                                    <li style="margin:0px 10px"><a href=""><img src="Picture/qzly-4.png"  width="326" height="247"/></a>					                                    <div class="pw-li-t">
+                                    <p>韩国江原道冬奥会之旅门票</p>
+                                    <a><b>￥</b>2380</a>
+                                    <span>门店价<b>￥2450</b></span>
                                     <div class="pw-li-t-d">
                                     立即购买&gt;&gt;
                                     </div>
                                     </div>
                                     </li>
-                                    <li><a href=""><img src="Picture/pw-1.jpg"  width="326" height="247"/></a>					                                    <div class="pw-li-t">
-                                    <p>北仑凤凰山海港乐园门票</p>
-                                    <a><b>￥</b>145</a>
-                                    <span>门店价<b>￥160</b></span>
+                                    <li><a href=""><img src="Picture/qzhd-5.png"  width="326" height="247"/></a>					                                    <div class="pw-li-t">
+                                    <p>北海公园游湖门票</p>
+                                    <a><b>￥</b>100</a>
+                                    <span>门店价<b>￥120</b></span>
                                     <div class="pw-li-t-d">
                                     立即购买&gt;&gt;
                                     </div>
@@ -285,21 +282,29 @@
                     <span class="more">more</span>
                     </div>
                  	<ul class="hdzs-main" >
-									<li><a href=""><img src="Picture/hdzs-1.jpg" width="236" height="185"/></a>					                                    <span>杭州烂苹果乐园</span>
+									<li><a href=""><img src="Picture/qzly-8.png" width="236" height="185"/></a>
+                                        <span>迪拜安纳塔拉沙漠度假村</span>
                                     </li>
-                                    <li><a href=""><img src="Picture/hdzs-2.jpg" width="236" height="185"/></a>					                                    <span>杭州烂苹果乐园</span>
+                                    <li><a href=""><img src="Picture/qzly-7.png" width="236" height="185"/></a>
+                                        <span>日本大阪环球影城冒险之旅</span>
                                     </li>
-                                    <li><a href=""><img src="Picture/hdzs-3.jpg" width="236" height="185"/></a>					                                    <span>杭州烂苹果乐园</span>
+                                    <li><a href=""><img src="Picture/qzhd-12.png" width="236" height="185"/></a>
+                                        <span>疯狂动物世界开放啦</span>
                                     </li>
-                                    <li class="last"><a href=""><img src="Picture/hdzs-4.jpg" width="236" height="185"/></a>					                                    <span>杭州烂苹果乐园</span>
+                                    <li class="last"><a href=""><img src="Picture/qzly-4.png" width="236" height="185"/></a>
+                                        <span>韩国江原道冬奥会之旅</span>
                                     </li>
-                                    <li><a href=""><img src="Picture/hdzs-5.jpg" width="236" height="185"/></a>					                                    <span>杭州烂苹果乐园</span>
+                                    <li><a href=""><img src="Picture/qzly-6.png" width="236" height="185"/></a>
+                                        <span>泰国沽岛soneva kiri</span>
                                     </li>
-                                    <li><a href=""><img src="Picture/hdzs-6.jpg" width="236" height="185"/></a>					                                    <span>杭州烂苹果乐园</span>
+                                    <li><a href=""><img src="Picture/qzly-9.png" width="236" height="185"/></a>
+                                        <span>台湾高翔义大乐园</span>
                                     </li>
-                                    <li><a href=""><img src="Picture/hdzs-7.jpg" width="236" height="185"/></a>					                                    <span>杭州烂苹果乐园</span>
+                                    <li><a href=""><img src="Picture/qzhd-11.png" width="236" height="185"/></a>
+                                        <span>探秘神秘海洋走进贝壳世界</span>
                                     </li>
-                                    <li class="last"><a href=""><img src="Picture/hdzs-8.jpg" width="236" height="185"/></a>					                                    <span>杭州烂苹果乐园</span>
+                                    <li class="last"><a href=""><img src="Picture/qzly-13.png" width="236" height="185"/></a>
+                                        <span>新加坡玩转圣淘沙</span>
                                     </li>
                                     
 							<div style="clear:both;"></div>		

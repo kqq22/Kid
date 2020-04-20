@@ -1,5 +1,6 @@
 ﻿<%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -54,95 +55,63 @@
         <div class="c"></div>
         </div>
 <div class="demo">
-		
-		<div class="demo-left">
-        <div class="demo-left-top">
-        <p><img src="Picture/dingdan_03.jpg" /></p>
-        <h3>${user.name}</h3>
-        </div>
-        	<ul>
-            <li class="title2"><a href="grzl.jsp">我的资料</a></li>
-            <li class="title2"><a href="wddd.jsp">我的订单</a></li>
-            <li class="title2"><a href="#">意见反馈</a></li>		
+
+        <div class="demo-left">
+            <div class="demo-left-top">
+                <p><img src="Picture/dingdan_03.jpg" /></p>
+                <h3>${user.name}</h3>
+            </div>
+            <ul>
+                <li class="title2"><a href="grzl.jsp">我的资料</a></li>
+                <li class="title2"><a href="wddd.jsp">我的订单</a></li>
+                <li class="title2"><a href="#">意见反馈</a></li>
             </ul>
-        	</div>
+        </div>
+
         <div class="demo-right">
-        <div style="width:780px; margin:0 auto; padding-top:10px;">
-            <table width="100%" border="0"  class="tb-title" style=" border-collapse:collapse;" >
-                  <tr style=" background:#fef7ea; border:1px solid #fed89a;">
-                    <th scope="col" width="40%">主题</th>
-                    <th scope="col" width="17%">订购信息</th>
-                    <th scope="col" width="8%">数量</th>
-                    <th scope="col" width="20%" >实付款（元）</th>
-                    <th scope="col" width="15%">交易状态</th>
-                  </tr>
-            </table>
-        </div>
-        <div style="clear:both;"></div>
-        <div  class="tb-min" >
-         <p class="tb-title2">2015/7/7<span>订单号：14454545645989</span></p>
-       
-        	 <table width="100%" border="1"class="tb-title1" >
-           
-              <tr >
-                <td class="ddc" width="40%"><a>新梦想少儿足球免费试踢啦！</a></td>
-                <td class="ddc" width="17%" ><p>成人，1人，￥80/人</p><p>儿童，1人，￥80/人</p></td>
-                <td class="ddc" width="8%" >2</td>
-                <td class="ddc" width="20%" >100.00</td>
-                  <td class="ddc" width="15%"><a href="ddxq.jsp"><p>交易完成</p><p>查看详情</p></a></td>
-              </tr>
-              <tr >
-                <td class="ddc" width="40%"><a>新梦想少儿足球免费试踢啦！</a></td>
-                <td class="ddc" width="17%" ><p>成人，1人，￥80/人</p><p>儿童，1人，￥80/人</p></td>
-                <td class="ddc" width="8%" >2</td>
-                <td class="ddc" width="20%" >100.00</td>
-                <td class="ddc" width="15%"><p>交易完成</p><p>查看详情</p></td>
-              </tr>
-			</table>
-        </div>
-        <div style="clear:both;"></div>
-         <div  class="tb-min" >
-         <p class="tb-title2">2015/7/7<span>订单号：1465646654989</span></p>
-       
-        	 <table width="100%" border="1"class="tb-title1" >
-           
-              <tr >
-                <td class="ddc" width="40%"><a>新梦想少儿足球免费试踢啦！</a></td>
-                <td class="ddc" width="17%" ><p>成人，1人，￥80/人</p><p>儿童，1人，￥80/人</p></td>
-                <td class="ddc" width="8%" >2</td>
-                <td class="ddc" width="20%" >100.00</td>
-                <td class="ddc" width="15%"><p>交易完成</p><p>查看详情</p></td>
-              </tr>
-			</table>
-        </div>
-        <div style="clear:both;"></div>
-        <div  class="tb-min" >
-         <p class="tb-title2">2015/7/7<span>订单号：1465646654989</span></p>
-       
-        	 <table width="100%" border="1"class="tb-title1" >
-           
-              <tr >
-                <td class="ddc" width="40%"><a>新梦想少儿足球免费试踢啦！</a></td>
-                <td class="ddc" width="17%" ><p>成人，1人，￥80/人</p><p>儿童，1人，￥80/人</p></td>
-                <td class="ddc" width="8%" >2</td>
-                <td class="ddc" width="20%" >100.00</td>
-                <td class="ddc" width="15%"><p>交易完成</p><p>查看详情</p></td>
-              </tr>
-			</table>
-        </div>
-      <div style="clear:both;"></div>
-          <div class="page-normal">
-                <span class="page-current">1</span>
-                <a href="#">2</a>
-                <a href="#">3</a>
-                <a href="#">4</a>
-                <a href="#">5</a>
-                <a href="#">6</a>
-                <a href="#">7</a>
-                <a href="#" class="page-next">下一页</a>
+            <div style="width:780px; margin:0 auto; padding-top:10px;">
+                <table width="100%" border="0"  class="tb-title" style=" border-collapse:collapse;" >
+                    <tr style=" background:#fef7ea; border:1px solid #fed89a;">
+                        <th scope="col" width="40%">主题</th>
+                        <th scope="col" width="17%">订购信息</th>
+                        <th scope="col" width="8%">数量</th>
+                        <th scope="col" width="20%" >实付款（元）</th>
+                        <th scope="col" width="15%">交易状态</th>
+                    </tr>
+                </table>
+            </div>
+            <div style="clear:both;"></div>
+            <div  class="tb-min" >
+
+                <!-- 循环开始 -->
+                <c:forEach items="${sessionScope.orderList}" var="order">
+                <table width="100%" border="1"class="tb-title1" >
+                    <tr><p class="tb-title2">${order.date}<span>订单号：${order.ordernumber}</span></p></tr>
+                    <tr >
+                        <td class="ddc" width="40%"><a>${order.topic}</a></td>
+                        <td class="ddc" width="17%" ><p>${order.type}，${order.count}人，￥${order2.price}/人</p></td>
+                        <td class="ddc" width="8%" >${order.count}</td>
+                        <td class="ddc" width="20%" >${order.totalprice}</td>
+                        <td class="ddc" width="15%"><a href="orderdetails?orderid=${order.oid}"><p>交易完成</p><p>查看详情</p></a></td>
+                    </tr>
+                </table>
+                </c:forEach>
+                <!-- 循环结束 -->
+            </div>
+                <div style="clear:both;"></div>
+
+            <div class="page-normal">
+                第${sessionScope.pageNum}页（共${sessionScope.maxNum}页）
+                <a href="order?pageNum=${sessionScope.pageNum-1}">&lt;</a>
+                <a href="order?pageNum=1">首页</a>
+                <a href="order?pageNum=${sessionScope.maxNum}">尾页</a>
+                <a href="order?pageNum=${sessionScope.pageNum+1}" >&gt;</a>
             </div>
         </div>
-            <div style="clear:both;"></div>
+        <div style="clear:both;"></div>
+
+
+
         </div>
      
 </div>

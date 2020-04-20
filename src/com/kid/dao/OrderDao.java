@@ -25,7 +25,7 @@ public interface OrderDao {
 	 * @param pageNum  每页显示几行
 	 * @return
 	 */
-	public List<OrderEntity> showOrder(int pageSize, int pageNum);
+	public List<OrderEntity> showOrder(int pageSize, int pageNum,String name);
 
 	/**
 	 * 查询最大页数

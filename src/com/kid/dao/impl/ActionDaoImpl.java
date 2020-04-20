@@ -56,6 +56,11 @@ public class ActionDaoImpl extends BaseDao implements ActionDao {
         return list;
     }
 
+    /**
+     * 查询最大页数
+     * @param pageSize  每页显示几行
+     * @return  返回最大页码数
+     */
     @Override
     public int pageMaxPageNum(int pageSize) {
         int max = 0;

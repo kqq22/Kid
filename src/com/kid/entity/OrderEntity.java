@@ -16,7 +16,8 @@ public class OrderEntity {
 	private int count;  //票数
 	private double totalprice;  //总价
 	private String status;  //状态
-	private Date date;  //日期
+	private String date;  //日期
+	private String name;  //用户名
 	public int getOid() {
 		return oid;
 	}
@@ -65,15 +66,23 @@ public class OrderEntity {
 	public void setStatus(String status) {
 		this.status = status;
 	}
-	public Date getDate() {
+	public String getDate() {
 		return date;
 	}
-	public void setDate(Date date) {
+	public void setDate(String date) {
 		this.date = date;
 	}
 
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
 	public OrderEntity(int oid, String ordernumber, String topic, String type,
-					   double price, int count, double totalprice, String status, Date date) {
+					   double price, int count, double totalprice, String status, String date,String name) {
 		super();
 		this.oid = oid;
 		this.ordernumber = ordernumber;
@@ -84,6 +93,7 @@ public class OrderEntity {
 		this.totalprice = totalprice;
 		this.status = status;
 		this.date = date;
+		this.name = name;
 	}
 	//无参构造方法
 	public OrderEntity(){

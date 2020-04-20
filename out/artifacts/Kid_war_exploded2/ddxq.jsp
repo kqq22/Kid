@@ -1,5 +1,6 @@
 ﻿<%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -47,7 +48,7 @@
 		<div class="demo-left">
         <div class="demo-left-top">
         <p><img src="Picture/dingdan_03.jpg" /></p>
-        <h3>addasd</h3>
+        <h3>${user.name}</h3>
         </div>
         	<ul>
             <li class=""><a href="grzl.jsp">我的资料</a></li>
@@ -57,41 +58,45 @@
         	</div>
         <div class="demo-right">
         <h2>订单详情</h2>
-            <div class="demo-right-tb">
-                <div class="demo-right-th">
-                    <p>新梦想少儿足球免费试踢啦!<span><img src="Picture/sc_03.jpg" /></span></p>
-                </div>
-                <div class="demo-right-tr">
-                	<p class="demo-right-s1">目的地：体育馆</p>
-                    <p class="demo-right-s2">联系人信息</p>
+            <!-- 循环开始 -->
+            <c:forEach items="${sessionScope.orderdetailsList}" var="orderdetails" varStatus="st">
+                <div class="demo-right-tb">
+                    <div class="demo-right-th">
+                        <p>${orderdetails.topic}<span><img src="Picture/sc_03.jpg" /></span></p>
+                    </div>
+                    <div class="demo-right-tr">
+                        <p class="demo-right-s1">目的地：${orderdetails.address}</p>
+                        <p class="demo-right-s2">联系人信息</p>
+                        <div style="clear:both;"></div>
+                    </div>
                     <div style="clear:both;"></div>
-                </div>
-                <div style="clear:both;"></div>
-                <div class="demo-right-tr">
-                	<p class="demo-right-s1">出行方式：自驾</p>
-                    <p class="demo-right-s2">姓名：王磊</p>
+                    <div class="demo-right-tr">
+                        <p class="demo-right-s1">出行方式：${orderdetails.gotype}</p>
+                        <p class="demo-right-s2">姓名：${orderdetails.name}</p>
+                        <div style="clear:both;"></div>
+                    </div>
                     <div style="clear:both;"></div>
-                </div>
-                <div style="clear:both;"></div>
-                <div class="demo-right-tr">
-                	<p class="demo-right-s1">订购信息：成人，1人，￥80/人</p>
-                    <p class="demo-right-s2">手机号：13526272334</p>
+                    <div class="demo-right-tr">
+                        <p class="demo-right-s1">订购信息：${orderdetails.type}，${orderdetails.count}人，￥${orderdetails.price}/人</p>
+                        <p class="demo-right-s2">手机号：${orderdetails.phone}</p>
+                        <div style="clear:both;"></div>
+                    </div>
                     <div style="clear:both;"></div>
+                    <div class="demo-right-tr">
+                        <p class="demo-right-s2">备注：无</p>
+                        <div style="clear:both;"></div>
+                    </div>
+                    <div class="demo-right-tr">
+                        <p class="demo-right-s1 demo-right-last1">
+                            <span>实际付款：￥<b>${orderdetails.totalprice}</b></span>
+                        </p>
+                        <p class="demo-right-s2 demo-right-last2"></p>
+                        <div style="clear:both;"></div>
+                    </div>
                 </div>
-                <div style="clear:both;"></div>
-                <div class="demo-right-tr">
-                	<p class="demo-right-s1" style="text-indent:80px;">儿童，1人，￥80/人</p>
-                    <p class="demo-right-s2">备注：无</p>
-                    <div style="clear:both;"></div>
-                </div>
-                <div class="demo-right-tr">
-                	<p class="demo-right-s1 demo-right-last1">
-                    	<span>实际付款：￥<b>130</b></span>
-                    </p>
-                    <p class="demo-right-s2 demo-right-last2"></p>
-                    <div style="clear:both;"></div>
-                </div>
-            </div>
+            </c:forEach>
+
+            <!-- 循环结束 -->
         </div>
             <div style="clear:both;"></div>
         </div>

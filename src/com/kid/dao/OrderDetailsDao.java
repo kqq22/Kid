@@ -1,5 +1,5 @@
 package com.kid.dao;
-import com.kid.entity.OrderEntity;
+import com.kid.entity.OrderDetailsEntity;
 import com.kid.entity.TicketEntity;
 import com.kid.entity.UserEntity;
 
@@ -21,17 +21,9 @@ public interface OrderDetailsDao {
 	public int addOrderDeails(List<TicketEntity> list, UserEntity user,int count);
 
 	/**
-	 * 分页查询订单
-	 * @param pageSize  页码
-	 * @param pageNum  每页显示几行
-	 * @return
+	 * 查询订单详情信息
+	 * @param oId 订单表id
+	 * @return 返回订单详情集合
 	 */
-	public List<OrderEntity> showOrder(int pageSize, int pageNum);
-
-	/**
-	 * 查询最大页数
-	 * @param pageSize  每页显示几行
-	 * @return  返回最大页码数
-	 */
-	public int pageMaxPageNum(int pageSize);
+	public List<OrderDetailsEntity> showOrderDetails(int oId);
 }

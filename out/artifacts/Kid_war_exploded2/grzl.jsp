@@ -53,7 +53,7 @@
         </div>
         	<ul>
             <li class=""><a href="grzl.jsp">我的资料</a></li>
-            <li class=""><a href="wddd.jsp">我的订单</a></li>
+            <li class=""><a href="order?pageNum=1">我的订单</a></li>
             <li class=""><a >意见反馈</a></li>		
             </ul>
         	</div>

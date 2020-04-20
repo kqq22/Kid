@@ -81,6 +81,17 @@
         <servlet-class>com.kid.servlet.BuyTicket3Servlet</servlet-class>
     </servlet>
 
+    <!-- OrderListServlet -->
+    <servlet>
+        <servlet-name>OrderListServlet</servlet-name>
+        <servlet-class>com.kid.servlet.OrderListServlet</servlet-class>
+    </servlet>
+
+    <!-- OrderDetailsListServlet -->
+    <servlet>
+        <servlet-name>OrderDetailsListServlet</servlet-name>
+        <servlet-class>com.kid.servlet.OrderDetailsListServlet</servlet-class>
+    </servlet>
     <!-- <servlet-mapping>
      <servlet-name>JAX-RS Servlet</servlet-name>
         <url-pattern>/jaxrs/*</url-pattern>
@@ -164,4 +175,15 @@
         <url-pattern>/buyticketpw</url-pattern>
     </servlet-mapping>
 
+    <!-- OrderListServlet -->
+    <servlet-mapping>
+        <servlet-name>OrderListServlet</servlet-name>
+        <url-pattern>/order</url-pattern>
+    </servlet-mapping>
+
+    <!-- OrderDetailsListServlet -->
+    <servlet-mapping>
+        <servlet-name>OrderDetailsListServlet</servlet-name>
+        <url-pattern>/orderdetails</url-pattern>
+    </servlet-mapping>
 </web-app>
