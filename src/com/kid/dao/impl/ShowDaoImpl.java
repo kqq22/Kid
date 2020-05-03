@@ -3,12 +3,22 @@ package com.kid.dao.impl;
 import com.kid.dao.BaseDao;
 import com.kid.dao.ShowDao;
 import com.kid.entity.ShowEntity;
-
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * 活动展示表接口类
+ * @author Administrator
+ *
+ */
 public class ShowDaoImpl extends BaseDao implements ShowDao {
+    /**
+     * 分页查询所有活动展示表的信息
+     * @param pageNum  页码
+     * @param pageSize  每页显示多少行
+     * @return  返回亲子活动表对象
+     */
     @Override
     public List<ShowEntity> show(int pageNum, int pageSize) {
         List<ShowEntity> list = new ArrayList<ShowEntity>();
@@ -43,6 +53,11 @@ public class ShowDaoImpl extends BaseDao implements ShowDao {
         return list;
     }
 
+    /**
+     * 查询最大页数
+     * @param pageSize  每页显示几行
+     * @return  返回最大页码数
+     */
     @Override
     public int pageMaxPageNum(int pageSize) {
         int max = 0;

@@ -4,6 +4,8 @@ import com.kid.dao.BaseDao;
 import com.kid.dao.OrderDao;
 import com.kid.entity.OrderEntity;
 import com.kid.entity.TicketEntity;
+import com.kid.entity.UserEntity;
+
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
@@ -14,34 +16,26 @@ import java.util.List;
  *
  */
 public class OrderDaoImpl extends BaseDao implements OrderDao {
+    /**
+     * 插入订单信息
+     * @param list  票务信息对象
+     * @param count  数量
+     * @return  返回受影响行数
+     */
     @Override
-    public int addOrder(List<TicketEntity> list,int count) {
+    public int addOrder(List<TicketEntity> list, int count, UserEntity user) {
         TicketEntity ticket = null;
         int row = 0;
-        //打开连接
-        openConn();
         //SQL语句
-        String sql = "insert into `order` values(default,CEILING(RAND()*90000000000000+1000000000),?,?,?,?,?,now())";
-        //执行
-        try {
-            stm = conn.prepareStatement(sql);
-            for (int i=0;i<list.size();i++){
-                ticket = list.get(i);
-            }
-            //设置参数
-            stm.setString(1,ticket.getTopic());  //主题
-            stm.setString(2,ticket.getPtype());  //类型
-            stm.setDouble(3,ticket.getPrice());  //价格
-            stm.setInt(4,count);  //数量
-            stm.setDouble(5,(ticket.getPrice()*count));  //总价
-            //结果处理
-            row = stm.executeUpdate();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }finally{
-            //关闭资源
-            closeAll();
+        String sql = "insert into `order` values(default,CEILING(RAND()*90000000000000+1000000000),?,?,?,?,?,now(),?)";
+        for (int i=0;i<list.size();i++){
+             ticket = list.get(i);
         }
+         //设置参数
+         Object [] objects = {ticket.getTopic(),ticket.getPtype(),ticket.getPrice(),count,(ticket.getPrice()*count),user.getName()};
+        //调用添加方法
+        row = executeUpdate(sql,objects);
+        //返回受影响行数
         return row;
     }
 
@@ -99,16 +93,18 @@ public class OrderDaoImpl extends BaseDao implements OrderDao {
      * @return  返回最大页码数
      */
     @Override
-    public int pageMaxPageNum(int pageSize) {
+    public int pageMaxPageNum(int pageSize,String name) {
         int max = 0;
         //jdbc操作
         try {
             //获取连接
             openConn();
             //SQL语句
-            String sql = "select count(*) from `order`";
+            String sql = "select count(*) from `order` where name =?";
             //获取执行对象
             stm = conn.prepareStatement(sql);
+            //设置参数
+            stm.setString(1,name);
             //结果集处理
             rs = stm.executeQuery();
             if (rs.next()){

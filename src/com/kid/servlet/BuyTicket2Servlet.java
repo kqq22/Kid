@@ -28,13 +28,13 @@ public class BuyTicket2Servlet extends HttpServlet {
         String address = request.getParameter("address");
         //增加订单表记录
         OrderDao orderDao = new OrderDaoImpl();
-        int orderLine = orderDao.addOrder(list,count);
+        int orderLine = orderDao.addOrder(list,count,user);
         //增加订单详情表信息
         OrderDetailsDao orderDetailsDao = new OrderDetailsDaoImpl();
         int orderdetLine = orderDetailsDao.addOrderDeails(list,user,count);
         if (orderLine>=1&&orderdetLine>=1){
             //购买成功
-            response.sendRedirect("wddd.jsp");
+            response.sendRedirect("order?pageNum=1");
         }else{
             //购买失败
            response.sendRedirect("qzly-1.jsp");

@@ -1,9 +1,5 @@
 package com.kid.dao.impl;
 import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Objects;
-
 import com.kid.dao.BaseDao;
 import com.kid.dao.UserDao;
 import com.kid.entity.UserEntity;
@@ -54,57 +50,35 @@ public class UserDaoImpl extends BaseDao implements UserDao {
 	@Override
 	public int Register(UserEntity user) {
 		int row = 0;
-		//打开连接
-		openConn();
 		//SQL语句
 		String sql = "insert into user values(default,?,?,?,?,?,?,?,?)";
-		//执行
-		try {
-			stm = conn.prepareStatement(sql);
-			//设置参数
-			stm.setString(1, user.getName());
-			stm.setString(2, user.getPwd());
-			stm.setString(3, user.getEmail());
-			stm.setString(4, user.getPhone());
-			stm.setString(5, user.getAddress());
-			stm.setString(6, user.getQq());
-			stm.setString(7, user.getBsex());
-			stm.setString(8, user.getBname());
-			//结果处理
-			row = stm.executeUpdate();
-		} catch (SQLException e) {
-			e.printStackTrace();
-		}finally{
-			//关闭资源
-			closeAll();
-		}
+		//设置参数
+		Object [] objects = {user.getName(),user.getPwd(),user.getEmail(),user.getPhone(),user.getAddress(),user.getQq(),user.getBsex(),user.getBname()};
+		//调用添加方法
+		row = executeUpdate(sql,objects);
+		//关闭资源
+		closeAll();
+		//返回受影响行数
 		return row;
 	}
 
+	/**
+	 * 修改用户信息
+	 * @param user  用户对象
+	 * @return 返回受影响行数
+	 */
 	@Override
 	public int updateUser(UserEntity user,int id) {
 		int row = 0;
-		//打开连接
-		openConn();
 		//SQL语句
 		String sql = "update user set name=?,pwd=?,phone=?,email=? where id=?";
-		//执行
-		try {
-			stm = conn.prepareStatement(sql);
-			//设置参数
-			stm.setString(1, user.getName());  //用户名
-			stm.setString(2, user.getPwd());  //密码
-			stm.setString(3, user.getPhone());  //电话号码
-			stm.setString(4, user.getEmail());  //邮箱
-			stm.setInt(5,id);  //id
-			//结果处理
-			row = stm.executeUpdate();
-		} catch (SQLException e) {
-			e.printStackTrace();
-		}finally{
-			//关闭资源
-			closeAll();
-		}
+		//设置参数
+		Object [] objects = {user.getName(),user.getPwd(),user.getPhone(),user.getEmail(),id};
+		//调用修改方法
+		row = executeUpdate(sql,objects);
+		//关闭资源
+		closeAll();
+		//返回受影响行数
 		return row;
 	}
 

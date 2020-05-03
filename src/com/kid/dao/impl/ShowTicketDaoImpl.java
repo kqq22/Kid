@@ -3,12 +3,17 @@ package com.kid.dao.impl;
 import com.kid.dao.BaseDao;
 import com.kid.dao.ShowTicketDao;
 import com.kid.entity.ShowTicketEntity;
-
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
 public class ShowTicketDaoImpl extends BaseDao implements ShowTicketDao {
+    /**
+     * 分页查询所有票务信息
+     * @param pageNum  页码
+     * @param pageSize  每页显示多少行
+     * @return
+     */
     @Override
     public List<ShowTicketEntity> showTicket(int pageNum, int pageSize) {
         List<ShowTicketEntity> list = new ArrayList<ShowTicketEntity>();
@@ -28,11 +33,11 @@ public class ShowTicketDaoImpl extends BaseDao implements ShowTicketDao {
             while (rs.next()){
                 //创建亲子活动表对象
                 ShowTicketEntity showTicket = new ShowTicketEntity();
-                showTicket.setKid(rs.getInt(1));
-                showTicket.setTopic(rs.getString(2));
-                showTicket.setImage(rs.getString(3));
-                showTicket.setPrice(rs.getDouble(4));
-                showTicket.setMprice(rs.getDouble(5));
+                showTicket.setKid(rs.getInt(1));  //主键
+                showTicket.setTopic(rs.getString(2));  //主题
+                showTicket.setImage(rs.getString(3));  //图片
+                showTicket.setPrice(rs.getDouble(4));  //价格
+                showTicket.setMprice(rs.getDouble(5));  //门店价格
                 //加入返回集合中
                 list.add(showTicket);
             }
@@ -45,6 +50,11 @@ public class ShowTicketDaoImpl extends BaseDao implements ShowTicketDao {
         return list;
     }
 
+    /**
+     * 查询最大页数
+     * @param pageSize  每页显示几行
+     * @return
+     */
     @Override
     public int pageMaxPageNum(int pageSize) {
         int max = 0;

@@ -4,6 +4,7 @@ import java.util.List;
 
 import com.kid.entity.OrderEntity;
 import com.kid.entity.TicketEntity;
+import com.kid.entity.UserEntity;
 
 /**
  * 订单表接口类
@@ -17,7 +18,7 @@ public interface OrderDao {
 	 * @param count  数量
 	 * @return  返回受影响行数
 	 */
-	public int addOrder(List<TicketEntity> list,int count);
+	public int addOrder(List<TicketEntity> list, int count, UserEntity user);
 
 	/**
 	 * 分页查询订单
@@ -32,5 +33,5 @@ public interface OrderDao {
 	 * @param pageSize  每页显示几行
 	 * @return  返回最大页码数
 	 */
-	public int pageMaxPageNum(int pageSize);
+	public int pageMaxPageNum(int pageSize,String name);
 }

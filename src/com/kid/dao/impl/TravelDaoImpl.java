@@ -11,6 +11,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class TravelDaoImpl extends BaseDao implements TravelDao {
+    /**
+     * 分页查询所有亲子旅游表的信息
+     * @param pageNum  页码
+     * @param pageSize  每页显示多少行
+     * @param dayTour  分类关键字
+     * @return
+     */
     @Override
     public List<TravelEntity> showTravel(int pageNum, int pageSize,String dayTour) {
         List<TravelEntity> list = new ArrayList<TravelEntity>();
@@ -50,6 +57,12 @@ public class TravelDaoImpl extends BaseDao implements TravelDao {
         return list;
     }
 
+    /**
+     * 查询最大页数
+     * @param pageSize  每页显示几行
+     * @param dayTour  分类关键字
+     * @return
+     */
     @Override
     public int pageMaxPageNum(int pageSize,String dayTour) {
         int max = 0;

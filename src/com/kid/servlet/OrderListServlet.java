@@ -31,7 +31,7 @@ public class OrderListServlet extends HttpServlet {
             pageNum = Integer.parseInt(initPageNum);
         }
         //边界判断
-        int max = dao.pageMaxPageNum(pageSize);
+        int max = dao.pageMaxPageNum(pageSize,name);
         if (pageNum<=1){
             pageNum=1;
         }
