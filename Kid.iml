@@ -30,8 +30,12 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="mysql5.1" level="project" />
-    <orderEntry type="library" name="servlet-api" level="project" />
     <orderEntry type="library" name="jstl" level="project" />
     <orderEntry type="library" name="standard" level="project" />
+    <orderEntry type="library" name="smartupload" level="project" />
+    <orderEntry type="library" name="jsp-api-2.2.1-b03" level="project" />
+    <orderEntry type="library" name="Java EE 6-Java EE 6" level="project" />
+    <orderEntry type="library" name="servlet-api3" level="project" />
+    <orderEntry type="library" name="tomcat-api1" level="project" />
   </component>
 </module>

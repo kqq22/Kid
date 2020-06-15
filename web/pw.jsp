@@ -80,10 +80,10 @@
 					</ul>
                     <div class="page-normal">
                         第${sessionScope.pageNum}页（共${sessionScope.maxNum}页）
-                        <a href="action?pageNum=${sessionScope.pageNum-1}">&lt;</a>
-                        <a href="action?pageNum=1">首页</a>
-                        <a href="action?pageNum=${sessionScope.maxNum}">尾页</a>
-                        <a href="action?pageNum=${sessionScope.pageNum+1}" >&gt;</a>
+                        <a href="showticket?pageNum=${sessionScope.pageNum-1}">&lt;</a>
+                        <a href="showticket?pageNum=1">首页</a>
+                        <a href="showticket?pageNum=${sessionScope.maxNum}">尾页</a>
+                        <a href="showticket?pageNum=${sessionScope.pageNum+1}" >&gt;</a>
             </div>
             </div>
 		</div>

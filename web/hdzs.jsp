@@ -54,8 +54,8 @@
 			<div class="bd">
 				<ul class="fixed">
 				<li style=" background:url(Images/index_02.png) 50% 0 no-repeat"><a href="cn/#"></a></li>
-				<li style=" background:url(Images/index_02.png ) 50% 0 no-repeat"><a href="cn/#"></a></li>
-				<li style=" background:url(Images/index_02.png) 50% 0 no-repeat"><a href="cn/#"></a></li>
+				<li style=" background:url(Images/index_01.png ) 50% 0 no-repeat"><a href="cn/#"></a></li>
+				<li style=" background:url(Images/index_03.png) 50% 0 no-repeat"><a href="cn/#"></a></li>
 				</ul>
 			</div>
 			<div class="hd"><ul class="fixed"><li class="on"></li><li class=""></li><li class=""></li></ul></div>

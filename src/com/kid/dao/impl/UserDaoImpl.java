@@ -1,84 +1,139 @@
 package com.kid.dao.impl;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
+
 import com.kid.dao.BaseDao;
 import com.kid.dao.UserDao;
 import com.kid.entity.UserEntity;
 /**
- * ÓÃ»§±íÊµÏÖÀà
+ * ç”¨æˆ·è¡¨å®ç°ç±»
  * @author Administrator
  *
  */
 public class UserDaoImpl extends BaseDao implements UserDao {
 	/**
-	 * µÇÂ¼
-	 * @param name  ÓÃ»§Ãû
-	 * @param pwd  ÃÜÂë
-	 * @return  ·µ»ØÒ»¸öÓÃ»§¶ÔÏó
+	 * ç™»å½•
+	 * @param name  ç”¨æˆ·å
+	 * @param pwd  å¯†ç 
+	 * @return  è¿”å›ä¸€ä¸ªç”¨æˆ·å¯¹è±¡
 	 */
 	@Override
 	public UserEntity Login(String name, String pwd) {
 		UserEntity user = null;
-		//´ò¿ªÁ¬½Ó
+		//æ‰“å¼€è¿æ¥
 		openConn();
-		//´´½¨SQLÓï¾ä
+		//åˆ›å»ºSQLè¯­å¥
 		String sql = "select * from user where name=? and pwd=?";
-		//Ö´ĞĞ
+		//æ‰§è¡Œ
 		try {
 			stm = conn.prepareStatement(sql);
-			//ÉèÖÃ²ÎÊı
+			//è®¾ç½®å‚æ•°
 			stm.setString(1, name);
 			stm.setString(2, pwd);
-			//½á¹û´¦Àí
+			//ç»“æœå¤„ç†
 			rs = stm.executeQuery();
 			while (rs.next()) {
-				user = new UserEntity(rs.getInt("id"),rs.getString("name"),rs.getString("pwd"),rs.getString("email"),rs.getString("phone"),rs.getString("address"),rs.getString("qq"),rs.getString("bsex"),rs.getString("bname"));
+				user = new UserEntity(rs.getInt("id"),rs.getString("name"),rs.getString("pwd"),rs.getString("email"),rs.getString("phone"),rs.getString("address"),rs.getString("qq"),rs.getString("bsex"),rs.getString("bname"),rs.getInt("ctype"));
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}finally{
-			//¹Ø±Õ×ÊÔ´
+			//å…³é—­èµ„æº
 			closeAll();
 		}
 		return user;
 	}
 
 	/**
-	 * ×¢²á
-	 * @param user ÓÃ»§¶ÔÏó
-	 * @return ·µ»ØÊÜÓ°ÏìĞĞÊı
+	 * æ³¨å†Œ
+	 * @param user ç”¨æˆ·å¯¹è±¡
+	 * @return è¿”å›å—å½±å“è¡Œæ•°
 	 */
 	@Override
 	public int Register(UserEntity user) {
 		int row = 0;
-		//SQLÓï¾ä
-		String sql = "insert into user values(default,?,?,?,?,?,?,?,?)";
-		//ÉèÖÃ²ÎÊı
+		//SQLè¯­å¥
+		String sql = "insert into user values(default,?,?,?,?,?,?,?,?,2)";
+		//è®¾ç½®å‚æ•°
 		Object [] objects = {user.getName(),user.getPwd(),user.getEmail(),user.getPhone(),user.getAddress(),user.getQq(),user.getBsex(),user.getBname()};
-		//µ÷ÓÃÌí¼Ó·½·¨
+		//è°ƒç”¨æ·»åŠ æ–¹æ³•
 		row = executeUpdate(sql,objects);
-		//¹Ø±Õ×ÊÔ´
+		//å…³é—­èµ„æº
 		closeAll();
-		//·µ»ØÊÜÓ°ÏìĞĞÊı
+		//è¿”å›å—å½±å“è¡Œæ•°
 		return row;
 	}
 
 	/**
-	 * ĞŞ¸ÄÓÃ»§ĞÅÏ¢
-	 * @param user  ÓÃ»§¶ÔÏó
-	 * @return ·µ»ØÊÜÓ°ÏìĞĞÊı
+	 * ä¿®æ”¹ç”¨æˆ·ä¿¡æ¯
+	 * @param user  ç”¨æˆ·å¯¹è±¡
+	 * @return è¿”å›å—å½±å“è¡Œæ•°
 	 */
 	@Override
 	public int updateUser(UserEntity user,int id) {
 		int row = 0;
-		//SQLÓï¾ä
+		//SQLè¯­å¥
 		String sql = "update user set name=?,pwd=?,phone=?,email=? where id=?";
-		//ÉèÖÃ²ÎÊı
+		//è®¾ç½®å‚æ•°
 		Object [] objects = {user.getName(),user.getPwd(),user.getPhone(),user.getEmail(),id};
-		//µ÷ÓÃĞŞ¸Ä·½·¨
+		//è°ƒç”¨ä¿®æ”¹æ–¹æ³•
 		row = executeUpdate(sql,objects);
-		//¹Ø±Õ×ÊÔ´
+		//å…³é—­èµ„æº
 		closeAll();
-		//·µ»ØÊÜÓ°ÏìĞĞÊı
+		//è¿”å›å—å½±å“è¡Œæ•°
+		return row;
+	}
+
+	/**
+	 * æŸ¥è¯¢æ‰€æœ‰ç”¨æˆ·ä¿¡æ¯
+	 * @return  è¿”å›ç”¨æˆ·é›†åˆ
+	 */
+	@Override
+	public List<UserEntity> FindUserAll() {
+		List<UserEntity> list = new ArrayList<UserEntity>();
+		//æ‰“å¼€è¿æ¥
+		openConn();
+		//åˆ›å»ºSQLè¯­å¥
+		String sql = "select * from user";
+		//æ‰§è¡Œ
+		try {
+			stm = conn.prepareStatement(sql);
+			//ç»“æœå¤„ç†
+			rs = stm.executeQuery();
+			while (rs.next()) {
+				UserEntity user = new UserEntity();
+				user.setId(rs.getInt(1));//id
+				user.setName(rs.getString(2));//ç”¨æˆ·å
+				user.setPwd(rs.getString(3));//å¯†ç 
+				list.add(user);
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}finally{
+			//å…³é—­èµ„æº
+			closeAll();
+		}
+		return list;
+	}
+
+	/**
+	 * åˆ é™¤ç”¨æˆ·
+	 * @param id æ ¹æ®ä¸»é”®åˆ é™¤
+	 * @return  è¿”å›ç”¨æˆ·é›†åˆ
+	 */
+	@Override
+	public int deleteUser(int id) {
+		int row = 0;
+		//SQLè¯­å¥
+		String sql = "delete from user where id=?";
+		//è®¾ç½®å‚æ•°
+		Object [] objects = {id};
+		//è°ƒç”¨ä¿®æ”¹æ–¹æ³•
+		row = executeUpdate(sql,objects);
+		//å…³é—­èµ„æº
+		closeAll();
+		//è¿”å›å—å½±å“è¡Œæ•°
 		return row;
 	}
 

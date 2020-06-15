@@ -15,11 +15,12 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.util.List;
-
+/*
+ * 买票
+ */
 @WebServlet(name = "Servlet5")
 public class BuyTicket2Servlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        //买票
         //获取参数
         HttpSession session = request.getSession();
         UserEntity user = (UserEntity) session.getAttribute("user");  //用户对象
@@ -33,10 +34,10 @@ public class BuyTicket2Servlet extends HttpServlet {
         OrderDetailsDao orderDetailsDao = new OrderDetailsDaoImpl();
         int orderdetLine = orderDetailsDao.addOrderDeails(list,user,count);
         if (orderLine>=1&&orderdetLine>=1){
-            //购买成功
+            //购买成功  重定向至 order Servlet页面
             response.sendRedirect("order?pageNum=1");
         }else{
-            //购买失败
+            //购买失败  重定向至 qzly-1.jsp
            response.sendRedirect("qzly-1.jsp");
         }
     }

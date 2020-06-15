@@ -5,7 +5,6 @@
 <head>
 <meta http-equiv=“X-UA-Compatible” content=“IE=EmulateIE7″>
 <meta http-equiv=“X-UA-Compatible” content=“IE=8″>
-<head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 <title>首页</title>
@@ -56,8 +55,8 @@
 			<div class="bd">
 				<ul class="fixed">
 				<li style=" background:url(Images/index_02.png) 50% 0 no-repeat"><a href="cn/#"></a></li>
-				<li style=" background:url(Images/index_02.png ) 50% 0 no-repeat"><a href="cn/#"></a></li>
-				<li style=" background:url(Images/index_02.png) 50% 0 no-repeat"><a href="cn/#"></a></li>
+				<li style=" background:url(Images/index_01.png ) 50% 0 no-repeat"><a href="cn/#"></a></li>
+				<li style=" background:url(Images/index_03.png) 50% 0 no-repeat"><a href="cn/#"></a></li>
 				</ul>
 			</div>
 			<div class="hd"><ul class="fixed"><li class="on"></li><li class=""></li><li class=""></li></ul></div>

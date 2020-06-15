@@ -24,4 +24,39 @@ public interface ShowTicketDao {
      * @return
      */
     public int pageMaxPageNum(int pageSize);
+
+    /**
+     * 添加票务
+     * @param showticket  票务对象
+     * @return  返回受影响行数
+     */
+    public int insertShowTicket(ShowTicketEntity showticket);
+
+    /**
+     * 查询所有票务
+     * @return  返回票务对象
+     */
+    public List<ShowTicketEntity> selectShowTicket();
+
+    /**
+     * 根据id查询票务
+     * @param id  主键id
+     * @return  返回票务对象
+     */
+    public ShowTicketEntity findShowTicket(int id);
+
+    /**
+     * 修改票务
+     * @param showticket  票务对象
+     * @param id  根据主键修改
+     * @return  返回受影响行数
+     */
+    public int updateShowTicket(ShowTicketEntity showticket,int id);
+
+    /**
+     * 删除票务
+     * @param id  根据主键修改
+     * @return  返回受影响行数
+     */
+    public int deleteShowTicket(int id);
 }

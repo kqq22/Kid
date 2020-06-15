@@ -92,6 +92,139 @@
         <servlet-name>OrderDetailsListServlet</servlet-name>
         <servlet-class>com.kid.servlet.OrderDetailsListServlet</servlet-class>
     </servlet>
+
+    <!-- AddActionServlet -->
+    <servlet>
+        <servlet-name>AddActionServlet</servlet-name>
+        <servlet-class>com.kid.servlet.AddActionServlet</servlet-class>
+    </servlet>
+
+    <!-- AddTravelServlet -->
+    <servlet>
+        <servlet-name>AddTravelServlet</servlet-name>
+        <servlet-class>com.kid.servlet.AddTravelServlet</servlet-class>
+    </servlet>
+
+    <!-- AddTravelServlet -->
+    <servlet>
+        <servlet-name>AddShowTicketServlet</servlet-name>
+        <servlet-class>com.kid.servlet.AddShowTicketServlet</servlet-class>
+    </servlet>
+
+    <!-- SelectActionServlet -->
+    <servlet>
+        <servlet-name>SelectActionServlet</servlet-name>
+        <servlet-class>com.kid.servlet.SelectActionServlet</servlet-class>
+    </servlet>
+
+    <!-- UpdateActionServlet -->
+    <servlet>
+        <servlet-name>UpdateActionServlet</servlet-name>
+        <servlet-class>com.kid.servlet.UpdateActionServlet</servlet-class>
+    </servlet>
+
+    <!-- FindActionServlet -->
+    <servlet>
+        <servlet-name>FindActionServlet</servlet-name>
+        <servlet-class>com.kid.servlet.FindActionServlet</servlet-class>
+    </servlet>
+
+    <!-- DeleteActionServlet -->
+    <servlet>
+        <servlet-name>DeleteActionServlet</servlet-name>
+        <servlet-class>com.kid.servlet.DeleteActionServlet</servlet-class>
+    </servlet>
+
+    <!-- SelectTravelServlet -->
+    <servlet>
+        <servlet-name>SelectTravelServlet</servlet-name>
+        <servlet-class>com.kid.servlet.SelectTravelServlet</servlet-class>
+    </servlet>
+
+    <!-- FindTravelServlet -->
+    <servlet>
+        <servlet-name>FindTravelServlet</servlet-name>
+        <servlet-class>com.kid.servlet.FindTravelServlet</servlet-class>
+    </servlet>
+
+    <!-- DeleteTravelServlet -->
+    <servlet>
+        <servlet-name>DeleteTravelServlet</servlet-name>
+        <servlet-class>com.kid.servlet.DeleteTravelServlet</servlet-class>
+    </servlet>
+
+    <!-- UpdateTravelServlet -->
+    <servlet>
+        <servlet-name>UpdateTravelServlet</servlet-name>
+        <servlet-class>com.kid.servlet.UpdateTravelServlet</servlet-class>
+    </servlet>
+
+    <!-- SelectShowTicketServlet -->
+    <servlet>
+        <servlet-name>SelectShowTicketServlet</servlet-name>
+        <servlet-class>com.kid.servlet.SelectShowTicketServlet</servlet-class>
+    </servlet>
+
+    <!-- FindShowTicketServlet -->
+    <servlet>
+        <servlet-name>FindShowTicketServlet</servlet-name>
+        <servlet-class>com.kid.servlet.FindShowTicketServlet</servlet-class>
+    </servlet>
+
+    <!-- UpdateShowTicketServlet -->
+    <servlet>
+        <servlet-name>UpdateShowTicketServlet</servlet-name>
+        <servlet-class>com.kid.servlet.UpdateShowTicketServlet</servlet-class>
+    </servlet>
+
+    <!-- DeleteShowTicketServlet -->
+    <servlet>
+        <servlet-name>DeleteShowTicketServlet</servlet-name>
+        <servlet-class>com.kid.servlet.DeleteShowTicketServlet</servlet-class>
+    </servlet>
+
+    <!-- SelectUserServlet -->
+    <servlet>
+        <servlet-name>SelectUserServlet</servlet-name>
+        <servlet-class>com.kid.servlet.SelectUserServlet</servlet-class>
+    </servlet>
+
+    <!-- DeleteUserServlet -->
+    <servlet>
+        <servlet-name>DeleteUserServlet</servlet-name>
+        <servlet-class>com.kid.servlet.DeleteUserServlet</servlet-class>
+    </servlet>
+
+    <!-- AddAdminServlet -->
+    <servlet>
+        <servlet-name>AddAdminServlet</servlet-name>
+        <servlet-class>com.kid.servlet.AddAdminServlet</servlet-class>
+    </servlet>
+
+    <!-- SelectAdminServlet -->
+    <servlet>
+        <servlet-name>SelectAdminServlet</servlet-name>
+        <servlet-class>com.kid.servlet.SelectAdminServlet</servlet-class>
+    </servlet>
+
+    <!-- DeleteAdminServlet -->
+    <servlet>
+        <servlet-name>DeleteAdminServlet</servlet-name>
+        <servlet-class>com.kid.servlet.DeleteAdminServlet</servlet-class>
+    </servlet>
+
+    <!-- FindAdminServlet -->
+    <servlet>
+        <servlet-name>FindAdminServlet</servlet-name>
+        <servlet-class>com.kid.servlet.FindAdminServlet</servlet-class>
+    </servlet>
+
+    <!-- UpdateAdminServlet -->
+    <servlet>
+        <servlet-name>UpdateAdminServlet</servlet-name>
+        <servlet-class>com.kid.servlet.UpdateAdminServlet</servlet-class>
+    </servlet>
+
     <!-- <servlet-mapping>
      <servlet-name>JAX-RS Servlet</servlet-name>
         <url-pattern>/jaxrs/*</url-pattern>
@@ -185,5 +318,137 @@
     <servlet-mapping>
         <servlet-name>OrderDetailsListServlet</servlet-name>
         <url-pattern>/orderdetails</url-pattern>
+    </servlet-mapping>
+
+    <!-- AddActionServlet -->
+    <servlet-mapping>
+        <servlet-name>AddActionServlet</servlet-name>
+        <url-pattern>/addaction</url-pattern>
+    </servlet-mapping>
+
+    <!-- AddTravelServlet -->
+    <servlet-mapping>
+        <servlet-name>AddTravelServlet</servlet-name>
+        <url-pattern>/addtravel</url-pattern>
+    </servlet-mapping>
+
+    <!-- AddShowTicketServlet -->
+    <servlet-mapping>
+        <servlet-name>AddShowTicketServlet</servlet-name>
+        <url-pattern>/addshowticket</url-pattern>
+    </servlet-mapping>
+
+    <!-- SelectActionServlet -->
+    <servlet-mapping>
+        <servlet-name>SelectActionServlet</servlet-name>
+        <url-pattern>/selectaction</url-pattern>
+    </servlet-mapping>
+
+    <!-- UpdateActionServlet -->
+    <servlet-mapping>
+        <servlet-name>UpdateActionServlet</servlet-name>
+        <url-pattern>/updateaction</url-pattern>
+    </servlet-mapping>
+
+    <!-- FindActionServlet -->
+    <servlet-mapping>
+        <servlet-name>FindActionServlet</servlet-name>
+        <url-pattern>/findaction</url-pattern>
+    </servlet-mapping>
+
+    <!-- DeleteActionServlet -->
+    <servlet-mapping>
+        <servlet-name>DeleteActionServlet</servlet-name>
+        <url-pattern>/deleteaction</url-pattern>
+    </servlet-mapping>
+
+    <!-- SelectTravelServlet -->
+    <servlet-mapping>
+        <servlet-name>SelectTravelServlet</servlet-name>
+        <url-pattern>/selecttravel</url-pattern>
+    </servlet-mapping>
+
+    <!-- FindTravelServlet -->
+    <servlet-mapping>
+        <servlet-name>FindTravelServlet</servlet-name>
+        <url-pattern>/findtravel</url-pattern>
+    </servlet-mapping>
+
+    <!-- DeleteTravelServlet -->
+    <servlet-mapping>
+        <servlet-name>DeleteTravelServlet</servlet-name>
+        <url-pattern>/deletetravel</url-pattern>
+    </servlet-mapping>
+
+    <!-- DeleteTravelServlet -->
+    <servlet-mapping>
+        <servlet-name>UpdateTravelServlet</servlet-name>
+        <url-pattern>/updatetravel</url-pattern>
+    </servlet-mapping>
+
+    <!-- SelectShowTicketServlet -->
+    <servlet-mapping>
+        <servlet-name>SelectShowTicketServlet</servlet-name>
+        <url-pattern>/selectshowticket</url-pattern>
+    </servlet-mapping>
+
+    <!-- FindShowTicketServlet -->
+    <servlet-mapping>
+        <servlet-name>FindShowTicketServlet</servlet-name>
+        <url-pattern>/findshowticket</url-pattern>
+    </servlet-mapping>
+
+    <!-- UpdateShowTicketServlet -->
+    <servlet-mapping>
+        <servlet-name>UpdateShowTicketServlet</servlet-name>
+        <url-pattern>/updateshowticket</url-pattern>
+    </servlet-mapping>
+
+    <!-- DeleteShowTicketServlet -->
+    <servlet-mapping>
+        <servlet-name>DeleteShowTicketServlet</servlet-name>
+        <url-pattern>/deleteshowticket</url-pattern>
+    </servlet-mapping>
+
+    <!-- SelectUserServlet -->
+    <servlet-mapping>
+        <servlet-name>SelectUserServlet</servlet-name>
+        <url-pattern>/selectuser</url-pattern>
+    </servlet-mapping>
+
+    <!-- DeleteUserServlet -->
+    <servlet-mapping>
+        <servlet-name>DeleteUserServlet</servlet-name>
+        <url-pattern>/deleteuser</url-pattern>
+    </servlet-mapping>
+
+    <!-- AddAdminServlet -->
+    <servlet-mapping>
+        <servlet-name>AddAdminServlet</servlet-name>
+        <url-pattern>/addadmin</url-pattern>
+    </servlet-mapping>
+
+    <!-- SelectAdminServlet -->
+    <servlet-mapping>
+        <servlet-name>SelectAdminServlet</servlet-name>
+        <url-pattern>/selectadmin</url-pattern>
+    </servlet-mapping>
+
+    <!-- DeleteAdminServlet -->
+    <servlet-mapping>
+        <servlet-name>DeleteAdminServlet</servlet-name>
+        <url-pattern>/deleteadmin</url-pattern>
+    </servlet-mapping>
+
+    <!-- FindAdminServlet -->
+    <servlet-mapping>
+        <servlet-name>FindAdminServlet</servlet-name>
+        <url-pattern>/findadmin</url-pattern>
+    </servlet-mapping>
+
+    <!-- UpdateAdminServlet -->
+    <servlet-mapping>
+        <servlet-name>UpdateAdminServlet</servlet-name>
+        <url-pattern>/updateadmin</url-pattern>
     </servlet-mapping>
 </web-app>

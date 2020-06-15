@@ -13,7 +13,24 @@ public class TravelEntity {
 	private int age;  //年龄限制
 	private String daytour;  //几日游类型
 
-	public int getTid() {
+    public TravelEntity(String topic, String address, double price, int age, String daytour,String image) {
+		this.image = image;
+		this.topic = topic;
+		this.address = address;
+		this.price = price;
+		this.age = age;
+		this.daytour = daytour;
+    }
+
+    public TravelEntity(String topic, String address, int age, String daytour, double price) {
+		this.topic = topic;
+		this.address = address;
+		this.price = price;
+		this.age = age;
+		this.daytour = daytour;
+    }
+
+    public int getTid() {
 		return tid;
 	}
 

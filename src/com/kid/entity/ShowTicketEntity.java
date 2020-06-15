@@ -12,6 +12,19 @@ public class ShowTicketEntity {
     private double price;  //价格
     private double mprice;  //门店价格
 
+    public ShowTicketEntity(String topic, double price, double mprice, String image) {
+        this.topic = topic;
+        this.image = image;
+        this.price = price;
+        this.mprice = mprice;
+    }
+
+    public ShowTicketEntity(String topic, double price, double mprice) {
+        this.topic = topic;
+        this.price = price;
+        this.mprice = mprice;
+    }
+
     public int getKid() {
         return kid;
     }

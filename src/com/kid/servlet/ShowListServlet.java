@@ -15,7 +15,7 @@ import java.util.List;
 public class ShowListServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         HttpSession session = request.getSession();
-        //查询亲子活动表信息
+        //查询活动展示表信息
         //初始化dao
         ShowDao dao = new ShowDaoImpl();
         int pageNum = 1;//页码

@@ -13,7 +13,9 @@
 <%
 }else {
 %>
-<a href="grzl.jsp">${user.name}</a><a href="" class="top-line-a-on">欢迎您!</a>
+<a href="denglu.jsp" class="top-line-a-on">退   出</a>
+<a href="grzl.jsp">${user.name}</a>
+<a href="" class="top-line-a-on">欢迎您!</a>
 <%
     }
 %>

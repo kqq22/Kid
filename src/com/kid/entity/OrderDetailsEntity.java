@@ -1,20 +1,20 @@
 package com.kid.entity;
 /**
- * ¶©µ¥ÏêÏ¸±í
+ * è®¢å•è¯¦ç»†è¡¨
  * @author Administrator
  *
  */
 public class OrderDetailsEntity {
-	private int did;  //Ö÷¼ü
-	private String topic;  //Ö÷Ìâ
-	private String name;  //ÓÃ»§Ãû
-	private String phone;  //µç»°ºÅÂë
-	private String type;  //¶ùÍ¯\³ÉÈË
-	private int count;  //Æ±Êı
-	private double price;  //µ¥¼Û
-	private double totalprice;  //×Ü¼Û
-	private String gotype;  //³öĞĞ·½Ê½
-	private String address;  //µØÖ·
+	private int did;  //ä¸»é”®
+	private String topic;  //ä¸»é¢˜
+	private String name;  //ç”¨æˆ·å
+	private String phone;  //ç”µè¯å·ç 
+	private String type;  //å„¿ç«¥\æˆäºº
+	private int count;  //ç¥¨æ•°
+	private double price;  //å•ä»·
+	private double totalprice;  //æ€»ä»·
+	private String gotype;  //å‡ºè¡Œæ–¹å¼
+	private String address;  //åœ°å€
 	public int getDid() {
 		return did;
 	}
@@ -75,7 +75,7 @@ public class OrderDetailsEntity {
 	public void setAddress(String address) {
 		this.address = address;
 	}
-	
+
 	public OrderDetailsEntity(int did, String topic, String name, String phone,
 							  String type, int count, double price, double totalprice,
 							  String gotype, String address) {
@@ -91,8 +91,8 @@ public class OrderDetailsEntity {
 		this.gotype = gotype;
 		this.address = address;
 	}
-	//ÎŞ²Î¹¹Ôì·½·¨
+	//æ— å‚æ„é€ æ–¹æ³•
 	public OrderDetailsEntity(){
-		
+
 	}
 }

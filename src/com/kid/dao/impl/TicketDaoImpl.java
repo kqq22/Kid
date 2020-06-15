@@ -45,6 +45,7 @@ public class TicketDaoImpl extends BaseDao implements TicketDao {
                 tictet.setTopic(rs.getString(7));  //主题
                 //加入返回集合中
                 list.add(tictet);
+
             }
         } catch (SQLException e) {
             e.printStackTrace();

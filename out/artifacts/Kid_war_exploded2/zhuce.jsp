@@ -128,7 +128,7 @@ $(document).ready(function(){
 	</form>
     
     <div class="erweima">
-    <p>已有阿拉亲子论坛账号？ 立即登录</p>
+    <p>已有阿拉亲子论坛账号？ <a href="denglu.jsp">立即登录</a></p>
     <img src="Picture/demo_07.png" width="170" height="170"/>
     <p>「最新资讯 请关注我们的微信号」</p>
     </div>

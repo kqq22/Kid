@@ -15,7 +15,7 @@ public class UserEntity {
 	private String qq;  //QQ号码
 	private String bsex;  //宝宝性别
 	private String bname;  //宝宝姓名
-
+	private int ctype;  //用户类型
 
 	public int getId() {
 		return id;
@@ -71,13 +71,22 @@ public class UserEntity {
 	public void setBname(String bname) {
 		this.bname = bname;
 	}
+
+	public int getCtype() {
+		return ctype;
+	}
+
+	public void setCtype(int ctype) {
+		this.ctype = ctype;
+	}
+
 	public UserEntity(String name, String pwd) {
 		super();
 		this.name = name;
 		this.pwd = pwd;
 	}
 	public UserEntity(int id,String name, String pwd, String email, String phone,
-					  String address, String qq, String bsex, String bname) {
+					  String address, String qq, String bsex, String bname,int ctype) {
 		super();
 		this.id = id;
 		this.name = name;
@@ -88,6 +97,7 @@ public class UserEntity {
 		this.qq = qq;
 		this.bsex = bsex;
 		this.bname = bname;
+		this.ctype = ctype;
 	}
 
 	public UserEntity(String name, String pwd, String email, String phone,

@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
-@WebServlet(name = "Servlet4")
+@WebServlet(name = "UpdateUserServlet")
 public class UpdateUserServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         //设置编码格式、
@@ -30,7 +30,7 @@ public class UpdateUserServlet extends HttpServlet {
         int line = dao.updateUser(user,id);
         if(line==1){
             //修改成功
-            //将修改后的值存入sess中
+            //将修改后的值存入session中
             HttpSession session = request.getSession();
             session.setAttribute("user",user);
             response.sendRedirect("grzl.jsp");

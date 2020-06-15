@@ -26,7 +26,7 @@
 <div class="main-content">
 	<div class="wrapper">
     <form id="signupForm" method="post" action="loginDo" class="zcform br">
-    	<h2 class="title2">登录<a>立刻注册</a><a>没有注册&nbsp;？</a></h2>
+    	<h2 class="title2">登录<a href="zhuce.jsp">立刻注册</a><a>没有注册&nbsp;？</a></h2>
         <p class="clearfix">
        <label>用户名：</label><input id="telphone" name="telphone" class="required"  /><a  style="padding-left:10px; line-height:22px;">注册</a>
         </p>

@@ -15,6 +15,9 @@ import java.util.List;
 @WebServlet(name = "Servlet")
 public class TravelListServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        //get设置编码
+        request.setCharacterEncoding("utf-8");
+        response.setContentType("text/html;charset=utf-8");
         HttpSession session = request.getSession();
         //查询亲子活动表信息
         //初始化dao
@@ -24,12 +27,12 @@ public class TravelListServlet extends HttpServlet {
         String dayTour = "";
         String idayTour = request.getParameter("dayTour");;//几日游类型
         String initPageNum = request.getParameter("pageNum");
-
         if (null != initPageNum){
             pageNum = Integer.parseInt(initPageNum);
         }
         if (null != idayTour){
-            dayTour = idayTour;
+            //dayTour = new String(request.getParameter("dayTour").getBytes("iso8859-1"),"UTF-8");
+            dayTour = request.getParameter("dayTour");
         }
         //边界判断
         int max = dao.pageMaxPageNum(pageSize,"%"+dayTour+"%");

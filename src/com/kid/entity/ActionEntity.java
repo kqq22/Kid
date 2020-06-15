@@ -1,20 +1,28 @@
 package com.kid.entity;
 
-import java.util.Date;
 
 /**
- * Ç××Ó»î¶¯±íÊµÌåÀà
+ * äº²å­æ´»åŠ¨è¡¨å®ä½“ç±»
  * @author Administrator
  *
  */
 public class ActionEntity {
-	private int aid;  //Ö÷¼ü
-	private String image;  //Í¼Æ¬
-	private String statu;  //×´Ì¬
-	private String topic;  //Ö÷Ìâ
-	private String date;  //ÈÕÆÚ
-	private double price;  //¼Û¸ñ
-	public int getAid() {
+	private int aid;  //ä¸»é”®
+	private String image;  //å›¾ç‰‡
+	private String status;  //çŠ¶æ€
+	private String topic;  //ä¸»é¢˜
+	private String date;  //æ—¥æœŸ
+	private double price;  //ä»·æ ¼
+
+    public ActionEntity(String topic, String status, String date, double price) {
+		this.status = status;
+		this.topic = topic;
+		this.date = date;
+		this.price = price;
+    }
+
+
+    public int getAid() {
 		return aid;
 	}
 	public void setAid(int aid) {
@@ -26,11 +34,11 @@ public class ActionEntity {
 	public void setImage(String image) {
 		this.image = image;
 	}
-	public String getStatu() {
-		return statu;
+	public String getStatus() {
+		return status;
 	}
-	public void setStatu(String statu) {
-		this.statu = statu;
+	public void setStatus(String status) {
+		this.status = status;
 	}
 	public String getTopic() {
 		return topic;
@@ -50,18 +58,26 @@ public class ActionEntity {
 	public void setPrice(double price) {
 		this.price = price;
 	}
-	public ActionEntity(int aid, String image, String statu, String topic, String date,
+	public ActionEntity(int aid, String image, String status, String topic, String date,
 						double price) {
 		super();
 		this.aid = aid;
 		this.image = image;
-		this.statu = statu;
+		this.status = status;
 		this.topic = topic;
 		this.date = date;
 		this.price = price;
 	}
-	//ÎŞ²Î¹¹Ôì·½·¨
+	public ActionEntity(String topic, String status, double price, String date, String image) {
+		super();
+		this.image = image;
+		this.status = status;
+		this.topic = topic;
+		this.date = date;
+		this.price = price;
+	}
+	//æ— å‚æ„é€ æ–¹æ³•
 	public ActionEntity(){
-		
+
 	}
 }

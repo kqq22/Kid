@@ -68,7 +68,7 @@
                                         <span><i><img src="Picture/time_19.jpg" /></i>${action.date}</span>
                                         <a><b>￥</b>${action.price}</a>
                                     </div>
-                                        <div class="jinxin">${action.statu}</div>
+                                        <div class="jinxin">${action.status}</div>
                                     </li>
                                 </c:forEach>
                             <!-- 循环结束 -->

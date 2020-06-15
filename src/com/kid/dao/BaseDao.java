@@ -6,12 +6,12 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 /**
- * ¹¤¾ßÀà
+ * å·¥å…·ç±»
  * @author Administrator
  *
  */
 public class BaseDao {
-	//¼ÓÔØÇı¶¯Àà
+	//åŠ è½½é©±åŠ¨ç±»
 	static{
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
@@ -19,19 +19,19 @@ public class BaseDao {
 			e.printStackTrace();
 		}
 	}
-	
-	//Á¬½ÓËÄÒªËØ
+
+	//è¿æ¥å››è¦ç´ 
 	private static final String USER = "root";
 	private static final String PWD = "123456";
 	private static final String URL = "jdbc:mysql://127.0.0.1:3306/kids";
-	
-	//jdbc¶ÔÏó
+
+	//jdbcå¯¹è±¡
 	protected Connection conn;
 	protected PreparedStatement stm;
 	protected ResultSet rs;
 
 	/**
-	 * ´ò¿ªÁ´½Ó
+	 * æ‰“å¼€é“¾æ¥
 	 */
 	public void openConn(){
 		try {
@@ -42,19 +42,19 @@ public class BaseDao {
 	}
 
 	/**
-	 * ÔöÉ¾¸Ä¹«¹²·½·¨
-	 * @param sql  SQLÓï¾ä
-	 * @param objs   ²ÎÊı
-	 * @return   ·µ»ØÊÜÓ°ÏìĞĞÊı
+	 * å¢åˆ æ”¹å…¬å…±æ–¹æ³•
+	 * @param sql  SQLè¯­å¥
+	 * @param objs   å‚æ•°
+	 * @return   è¿”å›å—å½±å“è¡Œæ•°
 	 */
 	public int executeUpdate(String sql,Object[] objs) {
 		int row = 0;
 		try {
-			//´ò¿ªÁ¬½Ó
+			//æ‰“å¼€è¿æ¥
 			openConn();
-			//Ö´ĞĞSQLÓï¾ä
+			//æ‰§è¡ŒSQLè¯­å¥
 			stm = conn.prepareStatement(sql);
-			//ÉèÖÃ²ÎÊı
+			//è®¾ç½®å‚æ•°
 			if (objs!=null) {
 				for (int i = 0; i < objs.length; i++) {
 					stm.setObject(i+1, objs[i]);
@@ -64,14 +64,14 @@ public class BaseDao {
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}finally {
-			//¹Ø±Õ×ÊÔ´
+			//å…³é—­èµ„æº
 			closeAll();
 		}
 		return row;
 	}
 
 	/**
-	 * ¹Ø±Õ×ÊÔ´
+	 * å…³é—­èµ„æº
 	 */
 	public void closeAll(){
 		try {
@@ -88,5 +88,5 @@ public class BaseDao {
 			e.printStackTrace();
 		}
 	}
-	
+
 }

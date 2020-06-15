@@ -89,7 +89,7 @@
                     <tr><p class="tb-title2">${order.date}<span>订单号：${order.ordernumber}</span></p></tr>
                     <tr >
                         <td class="ddc" width="40%"><a>${order.topic}</a></td>
-                        <td class="ddc" width="17%" ><p>${order.type}，${order.count}人，￥${order2.price}/人</p></td>
+                        <td class="ddc" width="17%" ><p>${order.type}，${order.count}人，￥${order.price}/人</p></td>
                         <td class="ddc" width="8%" >${order.count}</td>
                         <td class="ddc" width="20%" >${order.totalprice}</td>
                         <td class="ddc" width="15%"><a href="orderdetails?orderid=${order.oid}"><p>交易完成</p><p>查看详情</p></a></td>

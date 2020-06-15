@@ -1,5 +1,8 @@
 package com.kid.servlet;
 
+import com.kid.dao.AdminDao;
+import com.kid.dao.impl.AdminDaoImpl;
+import com.kid.entity.AdminEntity;
 import com.kid.entity.UserEntity;
 import com.kid.service.UserService;
 import com.kid.service.impl.UserServiceImpl;
@@ -13,24 +16,33 @@ import java.io.IOException;
 
 public class LoginDo extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        //ÉèÖÃ±àÂë¸ñÊ½
+        //è®¾ç½®ç¼–ç æ ¼å¼
         request.setCharacterEncoding("UTF-8");
-        //»ñÈ¡²ÎÊı
+        //è·å–å‚æ•°
         String name = request.getParameter("telphone");
         String pwd = request.getParameter("password");
         UserService service = new UserServiceImpl();
         UserEntity user = service.login(name, pwd);
-        if (user==null) {
-            //µÇÂ¼Ê§°Ü
-            response.sendRedirect("denglu.jsp");
-        }else{
-            //µÇÂ¼³É¹¦
-            HttpSession session = request.getSession();
-            session.setAttribute("user",user);
-            response.sendRedirect("index.jsp");
+        if (user != null) {
+            if (user.getCtype() == 2) {
+                //ç™»å½•æˆåŠŸ
+                HttpSession session = request.getSession();
+                session.setAttribute("user", user);
+                response.sendRedirect("index.jsp");
+            }
+        }else {
+            //ç­‰äº1ä½ç®¡ç†å‘˜
+            AdminDao adminDao = new AdminDaoImpl();
+            AdminEntity admin = adminDao.cLogin(name, pwd);
+            if (admin != null) {
+                //ç™»å½•æˆåŠŸ
+                response.sendRedirect("managerIndex.jsp");
+            } else {
+                //ç™»å½•å¤±è´¥
+                response.sendRedirect("denglu.jsp");
+            }
         }
     }
-
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
     }

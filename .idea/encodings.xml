@@ -2,25 +2,10 @@
 <project version="4">
   <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/com/kid/dao/BaseDao.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/com/kid/dao/impl/UserDaoImpl.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/com/kid/entity/ActionEntity.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/com/kid/entity/OrderDetailsEntity.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/com/kid/service/impl/UserServiceImpl.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/com/kid/servlet/LoginDo.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/com/kid/servlet/RegisterDo.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/com/kids/dao/BaseDao.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/com/kids/dao/TravelDao.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/com/kids/dao/impl/UserDaoImpl.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/com/kids/entity/Action.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/com/kids/entity/Order.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/com/kids/entity/OrderDetails.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/com/kids/entity/Ticket.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/com/kids/entity/Travel.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/com/kids/entity/User.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/com/kids/service/impl/UserServiceImpl.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/com/kids/servlet/LoginDo.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/com/kids/servlet/RegisterDo.java" charset="GBK" />
-    <file url="PROJECT" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/web/css/style_admin.css" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/web/managerIndex_files/left_files/style_admin.css" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/web/managerIndex_files/right.jsp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/web/managerIndex_files/style_admin.css" charset="GBK" />
+    <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

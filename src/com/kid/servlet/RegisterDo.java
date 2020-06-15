@@ -13,9 +13,9 @@ import java.io.IOException;
 
 public class RegisterDo extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        //设置编码格式
+        //璁剧疆缂栫爜鏍煎紡
         request.setCharacterEncoding("UTF-8");
-        //获取参数
+        //鑾峰彇鍙傛暟
         String name = request.getParameter("userName");
         String pwd = request.getParameter("passWord");
         String email = request.getParameter("email");
@@ -28,10 +28,10 @@ public class RegisterDo extends HttpServlet {
         UserEntity user = new UserEntity(name,pwd,email,phone,jzd,QQ,bsex,bname);
         int row = service.register(user);
         if (row==1) {
-            //注册成功
+            //娉ㄥ唽鎴愬姛
             response.sendRedirect("denglu.jsp");
         }else{
-            //注册失败
+            //娉ㄥ唽澶辫触
             response.sendRedirect("zhuce.jsp");
         }
     }

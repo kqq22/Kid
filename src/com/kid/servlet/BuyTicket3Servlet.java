@@ -33,10 +33,10 @@ public class BuyTicket3Servlet extends HttpServlet {
         OrderDetailsDao orderDetailsDao = new OrderDetailsDaoImpl();
         int orderdetLine = orderDetailsDao.addOrderDeails(list,user,count);
         if (orderLine>=1&&orderdetLine>=1){
-            //购买成功
+            //购买成功  重定向至 order Servlet页面
             response.sendRedirect("order?pageNum=1");
         }else{
-            //购买失败
+            //购买失败  重定向至 qzhd-1.jsp
            response.sendRedirect("qzhd-1.jsp");
         }
     }

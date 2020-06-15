@@ -15,9 +15,13 @@ import java.util.List;
 
 public class Ticket2ListServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        //get设置编码
+        request.setCharacterEncoding("utf-8");
+        //response.setContentType("text/html;charset=utf-8");
         //查询票务表信息
         TicketDao dao = new TicketDaoImpl();
         //获取主题参数
+        //String topicly = new String(request.getParameter("topicly").getBytes("iso8859-1"),"UTF-8");
         String topicly = request.getParameter("topicly");
         //执行查询方法
         List<TicketEntity> listly = dao.showTicket(topicly);

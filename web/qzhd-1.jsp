@@ -33,7 +33,7 @@
             function getCount(){
                 //这里是获取class为Spinner的div元素里所有的input元素的值
                 var count = $("div[class=Spinner] :input").val();
-                document.getElementById("sel").value="";
+                document.getElementById("sel").value=" ";
                 document.getElementById("sel").value = count;
                 //document.getElementById("sel").innerHTML=""+count+"";
             }
@@ -122,7 +122,7 @@
                                 <div class="table-right-b-t2-m">
                                     <div id="d1" class="Spinner">
                                     </div>
-                                    <b>${ticket.ptype}</b><i>￥${ticket.price}</i>
+                                    <b>${ticket.ptype}</b>
                                     <div style="clear:both;"></div>
                                 </div>
                                 <div style="clear:both;"></div>
